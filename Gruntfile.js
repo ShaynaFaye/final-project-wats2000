@@ -41,7 +41,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'https://github.com/ShaynaFaye/data-in-webapp.git',
+          remote: 'https://github.com/ShaynaFaye/working-with-data.git',
           branch: 'gh-pages'
         }
       }
