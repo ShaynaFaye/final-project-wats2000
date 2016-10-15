@@ -8,10 +8,10 @@
  * Controller of the angularAppApp
  */
 angular.module('angularAppApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, current) {
+    
+    $scope.recipes = current.query();
+    
+    
+    
   });
