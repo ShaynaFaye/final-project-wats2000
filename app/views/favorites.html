@@ -1,0 +1,9 @@
+<h2>Favorite Recipes</h2>
+<div ng-if="recipes.length">
+  <div ng-repeat="hit in recipes">
+    <h3><a target="_blank" href="{{hit.recipe.url}}">{{hit.recipe.label}}</a></h3>
+  </div>
+</div>
+<div ng-if="!recipes.length">
+  <p>Sorry, you do not have any saved recipes</p>
+</div>
