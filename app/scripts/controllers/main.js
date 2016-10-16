@@ -14,6 +14,7 @@ angular.module('angularAppApp')
            
     $scope.currentPage = 0;
     $scope.resultsPerPage = 10;
+    $scope.currentRecipe= '';
     
     $scope.getResults = function() {
       $scope.recipes = current.query({
@@ -46,6 +47,10 @@ angular.module('angularAppApp')
           $localStorage.recipes.push(hit);
         }
       }
+      $scope.currentRecipe = hit.recipe.label;
+      $scope.recipeSaved = {
+        success: true
+      };
     };
     
     $scope.isSaved = function(hit) {
