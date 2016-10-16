@@ -11,6 +11,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 
 body {
+  background-color: #75717B;
   padding: 0;
 }
 
@@ -73,11 +74,37 @@ body {
   vertical-align: top;
   padding: 5px;
   margin: 10px;
-  border: 2px solid black;
+  border: 2px solid #2274A5;
+  background-color: #FFB997;
 }
 
-.about-section {
+.about-section,
+.favorites-list {
   text-align: center;
+  border: 2px solid #2274A5;
+  background-color: #FFB997;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+#favorite-recipes {
+  text-align: center;
+}
+a:link {
+    color: #2274A5;
+}
+
+a:visited {
+    color: #06D6A0;
+}
+
+a:hover {
+    color: #30292F;
+}
+
+h1, h2, h3 {
+  color: #23022E;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -96,6 +123,8 @@ body {
   }
   .footer {
     text-align: center;
+    color: #FFB997;
+    margin-top: 10px;
   }
   /* Space out the masthead */
   .header {
