@@ -19,7 +19,7 @@ angular.module('angularAppApp')
     $scope.getResults = function() {
       $scope.recipes = current.query({
         search: $scope.searchTerm,
-        from: ($scope.currentPage * $scope.resultsPerPage) + 1,
+        from: ($scope.currentPage * $scope.resultsPerPage),
         to: ($scope.currentPage * $scope.resultsPerPage) + $scope.resultsPerPage
       });
     };

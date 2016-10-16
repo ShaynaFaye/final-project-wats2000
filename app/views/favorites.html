@@ -1,7 +1,7 @@
 <h2>Favorite Recipes</h2>
 <div ng-if="recipes.length">
   <div ng-repeat="hit in recipes">
-    <h3><a target="_blank" href="{{hit.recipe.url}}">{{hit.recipe.label}}</a></h3>
+    <h4><a target="_blank" href="{{hit.recipe.url}}">{{hit.recipe.label}}</a></h4>
   </div>
 </div>
 <div ng-if="!recipes.length">

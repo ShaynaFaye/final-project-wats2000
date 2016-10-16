@@ -13,20 +13,21 @@
         
           
     <div ng-if="recipes.hits.length">
-        <p>Results from {{ recipes.from }} to {{ recipes.to }}</p>
+        <p>Results from {{ recipes.from + 1 }} to {{ recipes.to }}</p>
         
         <div ng-messages="recipeSaved">
           <p class="recipe-saved-alert bg-success text-success" ng-message="success">
             {{currentRecipe}} has been saved to your favorites.
           </p>
         </div>  
-        
-        <div ng-repeat="hit in recipes.hits">
-            <img target="_blank" src="{{hit.recipe.image}}">
-            <h3><a target="_blank" href="{{hit.recipe.url}}">{{hit.recipe.label}}</a></h3>
-            <button class="btn btn-default" ng-click="saveRecipe(hit)"><span class="glyphicon glyphicon-heart" aria-hidden="true" style="color: red"></span></button>
-        </div>
-                   
+
+        <div>
+            <div class="recipe-list" ng-repeat="hit in recipes.hits">
+                <img target="_blank" src="{{hit.recipe.image}}">
+                <h4><a target="_blank" href="{{hit.recipe.url}}">{{hit.recipe.label}}</a></h4>
+                <button class="btn btn-default" ng-click="saveRecipe(hit)"><span class="glyphicon glyphicon-heart" aria-hidden="true" style="color: red"></span></button>
+            </div>
+        </div>           
                      
         <button class="btn btn-primary" ng-click="prevPage()" ng-disabled="currentPage == 0">Prev</button>
         <button class="btn btn-primary" ng-click="nextPage ()">Next</button>
