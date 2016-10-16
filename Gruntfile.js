@@ -41,7 +41,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'https://github.com/ShaynaFaye/more-usable-app.git',
+          remote: 'https://github.com/ShaynaFaye/project-preview.git',
           branch: 'gh-pages'
         }
       }
