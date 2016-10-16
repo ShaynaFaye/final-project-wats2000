@@ -41,7 +41,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'https://github.com/ShaynaFaye/project-preview.git',
+          remote: 'https://github.com/ShaynaFaye/final-project-wats2000.git',
           branch: 'gh-pages'
         }
       }
